@@ -6,75 +6,52 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Rangana &amp; Umayangana | Wedding Invitation</title>
-
-<meta name="description" content="Wedding invitation of Rangana and Umayangana.">
 <meta name="theme-color" content="#ffffff">
+<meta name="description" content="Wedding invitation of Rangana and Umayangana.">
 
 <style>
-*,
-*::before,
-*::after {
+* {
     box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    min-height: 100%;
-    background: #ffffff;
+    background: #fff;
 }
 
 body {
     overflow-x: hidden;
-    font-family: Georgia, "Times New Roman", serif;
 }
 
-.invitation {
-    width: 100%;
-    max-width: none;
-    margin: 0;
-    padding: 0;
-}
-
-.page {
+.invitation, .page {
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 .page img {
     display: block;
     width: 100%;
-    max-width: 100%;
     height: auto;
     margin: 0;
     padding: 0;
     border: 0;
 }
 
+/* Mobile devices */
 @media (max-width: 600px) {
-    html,
-    body,
-    .invitation,
-    .page {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
     .page img {
         width: 100%;
         height: auto;
     }
 }
 
+/* Print */
 @media print {
     @page {
         margin: 0;
-        size: auto;
     }
 
     .page {
@@ -91,40 +68,40 @@ body {
 </head>
 
 <body>
-
 <main class="invitation">
 
-    <section class="page">
-        <img src="/Uma-01.jpg"
-             alt="Rangana and Umayangana wedding invitation cover"
-             fetchpriority="high">
-    </section>
+<section class="page">
+<img src="/Uma-01.jpg"
+     alt="Wedding invitation cover"
+     width="1200" height="1800"
+     fetchpriority="high"
+     loading="eager">
+</section>
 
-    <section class="page">
-        <img src="/Uma-02.jpg"
-             alt="Wedding invitation message"
-             loading="lazy">
-    </section>
+<section class="page">
+<img src="/Uma-02.jpg"
+     alt="Wedding invitation message"
+     loading="lazy">
+</section>
 
-    <section class="page">
-        <img src="/Uma-03.jpg"
-             alt="Wedding date, time and venue"
-             loading="lazy">
-    </section>
+<section class="page">
+<img src="/Uma-03.jpg"
+     alt="Wedding date and venue"
+     loading="lazy">
+</section>
 
-    <section class="page">
-        <img src="/Uma-04.jpg"
-             alt="Wedding words of blessing"
-             loading="lazy">
-    </section>
+<section class="page">
+<img src="/Uma-04.jpg"
+     alt="Wedding blessings"
+     loading="lazy">
+</section>
 
-    <section class="page">
-        <img src="/Uma-05.jpg"
-             alt="Wedding invitation final page"
-             loading="lazy">
-    </section>
+<section class="page">
+<img src="/Uma-05.jpg"
+     alt="Wedding invitation final page"
+     loading="lazy">
+</section>
 
 </main>
-
 </body>
 </html>
