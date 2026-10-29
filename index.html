@@ -4,38 +4,61 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Rangana &amp; Umayangana | Wedding Invitation</title>
+<meta name="description" content="View the wedding invitation of Rangana and Umayangana.">
 <meta name="theme-color" content="#ffffff">
+
+<link rel="preload" as="image" href="/Uma-01.jpg" fetchpriority="high">
 
 <style>
 * {
     box-sizing: border-box;
 }
 
-html, body {
+html {
     margin: 0;
     padding: 0;
     width: 100%;
-    background: #fff;
+    background: #ffffff;
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
     overflow-x: hidden;
+    background: #ffffff;
 }
 
-.invitation, .page {
+.invitation,
+.page {
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+.page {
+    line-height: 0;
 }
 
 .page img {
     display: block;
     width: 100%;
+    max-width: 100%;
     height: auto;
-    border: 0;
     margin: 0;
     padding: 0;
+    border: 0;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .page img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* Print */
@@ -46,10 +69,12 @@ body {
 
     .page {
         break-after: page;
+        page-break-after: always;
     }
 
     .page:last-child {
         break-after: auto;
+        page-break-after: auto;
     }
 }
 </style>
@@ -58,41 +83,41 @@ body {
 <body>
 <main class="invitation">
 
-<section class="page">
-<img src="/Uma-01.jpg"
-     alt="Wedding invitation cover"
-     loading="eager"
-     fetchpriority="high"
-     decoding="async">
-</section>
+    <section class="page">
+        <img src="/Uma-01.jpg"
+             alt="Rangana and Umayangana wedding invitation cover"
+             fetchpriority="high"
+             loading="eager"
+             decoding="async">
+    </section>
 
-<section class="page">
-<img src="/Uma-02.jpg"
-     alt="Wedding invitation page 2"
-     loading="lazy"
-     decoding="async">
-</section>
+    <section class="page">
+        <img src="/Uma-02.jpg"
+             alt="Wedding invitation page 2"
+             loading="lazy"
+             decoding="async">
+    </section>
 
-<section class="page">
-<img src="/Uma-03.jpg"
-     alt="Wedding invitation page 3"
-     loading="lazy"
-     decoding="async">
-</section>
+    <section class="page">
+        <img src="/Uma-03.jpg"
+             alt="Wedding invitation page 3"
+             loading="lazy"
+             decoding="async">
+    </section>
 
-<section class="page">
-<img src="/Uma-04.jpg"
-     alt="Wedding invitation page 4"
-     loading="lazy"
-     decoding="async">
-</section>
+    <section class="page">
+        <img src="/Uma-04.jpg"
+             alt="Wedding invitation page 4"
+             loading="lazy"
+             decoding="async">
+    </section>
 
-<section class="page">
-<img src="/Uma-05.jpg"
-     alt="Wedding invitation page 5"
-     loading="lazy"
-     decoding="async">
-</section>
+    <section class="page">
+        <img src="/Uma-05.jpg"
+             alt="Wedding invitation page 5"
+             loading="lazy"
+             decoding="async">
+    </section>
 
 </main>
 </body>
