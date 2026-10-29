@@ -1,123 +1,95 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Rangana & Umayangana | Wedding Invitation</title>
+    <title>Rangana &amp; Umayangana | Wedding Invitation</title>
 
-    <meta name="description" content="Wedding invitation of Rangana and Umayangana.">
+    <meta name="description"
+          content="View the wedding invitation of Rangana and Umayangana.">
+
+    <meta name="theme-color" content="#ffffff">
+    <meta name="robots" content="index, follow">
 
     <style>
         /* Reset */
-        * {
-            margin: 0;
-            padding: 0;
+        *,
+        *::before,
+        *::after {
             box-sizing: border-box;
         }
 
-        /* Base styles */
         html {
+            margin: 0;
+            padding: 0;
             scroll-behavior: smooth;
             -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
         }
 
         body {
+            margin: 0;
+            padding: 0;
             width: 100%;
             min-height: 100vh;
-            background-color: #f4f0eb;
+            background: #f4f0eb;
             font-family: Georgia, "Times New Roman", serif;
             overflow-x: hidden;
         }
 
-        /* Main invitation container */
         .invitation {
             width: 100%;
-            max-width: 1200px;
+            max-width: 1160px;
             margin: 0 auto;
-            padding: 0px;
+            padding: 24px;
         }
 
-        /* Individual invitation pages */
         .page {
+            position: relative;
             width: 100%;
-            margin: 0 auto 0px;
-            background-color: #ffffff;
+            margin: 0 auto 24px;
+            background: #fff;
             overflow: hidden;
         }
 
-        /* Responsive images */
         .page img {
             display: block;
             width: 100%;
-            max-width: 100%;
             height: auto;
+            max-width: 100%;
             object-fit: contain;
+            border: 0;
         }
 
-        /* Large desktop screens */
-        @media screen and (min-width: 1200px) {
-            .invitation {
-                max-width: 1100px;
-                padding: 30px;
-            }
-
-            .page {
-                margin-bottom: 30px;
-            }
+        /* Image loading error message */
+        .image-error {
+            padding: 24px 16px;
+            color: #8a2525;
+            font: 16px/1.5 Arial, sans-serif;
+            text-align: center;
+            overflow-wrap: anywhere;
         }
 
-        /* Laptop and tablet screens */
-        @media screen and (max-width: 1024px) {
+        [hidden] {
+            display: none !important;
+        }
+
+        /* Tablet */
+        @media (max-width: 1024px) {
             .invitation {
-                max-width: 100%;
                 padding: 16px;
             }
 
             .page {
-                margin-bottom: 20px;
+                margin-bottom: 16px;
             }
         }
 
-        /* Mobile screens */
-        @media screen and (max-width: 600px) {
+        /* Mobile */
+        @media (max-width: 600px) {
             body {
-                background-color: #ffffff;
-            }
-
-            .invitation {
-                width: 100%;
-                padding: 0;
-            }
-
-            .page {
-                width: 100%;
-                margin-bottom: 8px;
-            }
-
-            .page img {
-                width: 100%;
-                height: auto;
-            }
-        }
-
-        /* Very small mobile screens */
-        @media screen and (max-width: 360px) {
-            .page {
-                margin-bottom: 4px;
-            }
-        }
-
-        /* Print settings */
-        @media print {
-            @page {
-                size: auto;
-                margin: 0;
-            }
-
-            body {
-                background: #ffffff;
+                background: #fff;
             }
 
             .invitation {
@@ -128,6 +100,28 @@
 
             .page {
                 width: 100%;
+                margin: 0 0 6px;
+            }
+        }
+
+        /* Print */
+        @media print {
+            @page {
+                size: auto;
+                margin: 0;
+            }
+
+            body {
+                background: #fff;
+            }
+
+            .invitation {
+                width: 100%;
+                max-width: none;
+                padding: 0;
+            }
+
+            .page {
                 margin: 0;
                 overflow: visible;
                 break-after: page;
@@ -143,61 +137,69 @@
                 width: 100%;
                 height: auto;
             }
+
+            .image-error {
+                display: none !important;
+            }
         }
     </style>
 </head>
 
 <body>
-
     <main class="invitation">
 
-        <!-- Page 1 -->
         <section class="page">
-            <img
-                src="Uma-01.jpg"
-                alt="Rangana and Umayangana wedding invitation cover"
-                loading="eager"
-                fetchpriority="high"
-            >
+            <img src="./Uma-01.jpg"
+                 alt="Rangana and Umayangana wedding invitation cover"
+                 fetchpriority="high">
+            <p class="image-error" hidden></p>
         </section>
 
-        <!-- Page 2 -->
         <section class="page">
-            <img
-                src="Uma-02.jpg"
-                alt="Wedding invitation message"
-                loading="lazy"
-            >
+            <img src="./Uma-02.jpg"
+                 alt="Wedding invitation message"
+                 loading="eager">
+            <p class="image-error" hidden></p>
         </section>
 
-        <!-- Page 3 -->
         <section class="page">
-            <img
-                src="Uma-03.jpg"
-                alt="Wedding date, time and venue details"
-                loading="lazy"
-            >
+            <img src="./Uma-03.jpg"
+                 alt="Wedding date, time and venue details"
+                 loading="eager">
+            <p class="image-error" hidden></p>
         </section>
 
-        <!-- Page 4 -->
         <section class="page">
-            <img
-                src="Uma-04.jpg"
-                alt="Wedding words of blessing"
-                loading="lazy"
-            >
+            <img src="./Uma-04.jpg"
+                 alt="Wedding words of blessing"
+                 loading="eager">
+            <p class="image-error" hidden></p>
         </section>
 
-        <!-- Page 5 -->
         <section class="page">
-            <img
-                src="Uma-05.jpg"
-                alt="Wedding invitation final page"
-                loading="lazy"
-            >
+            <img src="./Uma-05.jpg"
+                 alt="Wedding invitation final page"
+                 loading="eager">
+            <p class="image-error" hidden></p>
         </section>
 
     </main>
 
+    <script>
+        document.querySelectorAll(".page img").forEach(function (img) {
+            img.addEventListener("error", function () {
+                const message = img.parentElement.querySelector(
+                    ".image-error"
+                );
+
+                message.textContent =
+                    "This invitation image could not be loaded. " +
+                    "Please check the image filename and hosting path.";
+
+                message.hidden = false;
+                img.hidden = true;
+            });
+        });
+    </script>
 </body>
 </html>
